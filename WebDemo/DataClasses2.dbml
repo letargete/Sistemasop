@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="allianc_promo" Class="base1" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(local);Initial Catalog=allianc_promo;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="allianc_promoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.institution" Member="institutions">
+    <Type Name="institution">
+      <Column Name="customer_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="institution_type" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="institution_subtype" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="company_id" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Association Name="customer_institution" Member="customer" ThisKey="customer_id" OtherKey="customer_id" Type="customer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.customer" Member="customers">
+    <Type Name="customer">
+      <Column Name="customer_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="customer_type" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="specialty_1" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="specialty_2" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="name_1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="name_2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="name_3" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="name_4" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RFC" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="license" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="status_change_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="creation_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="creator_territory_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="creator_employee_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="external_id_1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="external_id_2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="external_id_3" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="external_id_4" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="customer_institution" Member="institution" ThisKey="customer_id" OtherKey="customer_id" Type="institution" Cardinality="One" />
+      <Association Name="customer_doctor" Member="doctor" ThisKey="customer_id" OtherKey="customer_id" Type="doctor" Cardinality="One" />
+      <Association Name="customer_pharmacy" Member="pharmacy" ThisKey="customer_id" OtherKey="customer_id" Type="pharmacy" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.doctor" Member="doctors">
+    <Type Name="doctor">
+      <Column Name="customer_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="prefix_code" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="social_style" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="birth_year" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="birth_month" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="birth_day" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="customer_doctor" Member="customer" ThisKey="customer_id" OtherKey="customer_id" Type="customer" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.pharmacy" Member="pharmacies">
+    <Type Name="pharmacy">
+      <Column Name="customer_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pharmacy_type" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="pharmacy_subtype" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="company_id" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Association Name="customer_pharmacy" Member="customer" ThisKey="customer_id" OtherKey="customer_id" Type="customer" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

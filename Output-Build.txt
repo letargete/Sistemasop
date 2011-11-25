@@ -1,0 +1,3 @@
+﻿------ Build started: Project: WebDemo, Configuration: Debug Any CPU ------
+  WebDemo -> C:\Users\kazejin\PuntoVenta\WebDemo\WebDemo\bin\WebDemo.dll
+========== Build: 1 succeeded or up-to-date, 0 failed, 0 skipped ==========

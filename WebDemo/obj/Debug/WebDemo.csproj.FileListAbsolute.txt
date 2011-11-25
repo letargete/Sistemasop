@@ -1,0 +1,5 @@
+C:\Users\kazejin\PuntoVenta\WebDemo\WebDemo\bin\WebDemo.dll
+C:\Users\kazejin\PuntoVenta\WebDemo\WebDemo\bin\WebDemo.pdb
+C:\Users\kazejin\PuntoVenta\WebDemo\WebDemo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\kazejin\PuntoVenta\WebDemo\WebDemo\obj\Debug\WebDemo.dll
+C:\Users\kazejin\PuntoVenta\WebDemo\WebDemo\obj\Debug\WebDemo.pdb

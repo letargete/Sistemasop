@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="PuntoVenta">
+  <DataContextMoniker Name="/PuntoVentaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9cfaba6a-ae9e-4e04-8c3e-c03cc140854e" absoluteBounds="6, 1.375, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/PuntoVentaDataContext/customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a9922253-167e-46d1-9efb-3a3221959de5" absoluteBounds="6.0150000000000006, 1.835, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40cd373a-bce8-4254-84af-a1c6fcfd5f35" absoluteBounds="3.75, 1.375, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/PuntoVentaDataContext/system_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2cd5102e-78b9-4d9b-9e56-cc0b3fe39cd6" absoluteBounds="3.7649999999999997, 1.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

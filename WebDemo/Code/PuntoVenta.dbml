@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="allianc_promo" Class="PuntoVentaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(local);Initial Catalog=allianc_promo;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="allianc_promoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.customer" Member="customers">
+    <Type Name="customer">
+      <Column Name="customer_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="customer_type" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="specialty_1" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="specialty_2" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="name_1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="name_2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="name_3" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="name_4" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RFC" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="license" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="status_change_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="creation_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="creator_territory_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="creator_employee_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="external_id_1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="external_id_2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="external_id_3" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="external_id_4" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.system_users" Member="system_users">
+    <Type Name="system_user">
+      <Column Name="system_user_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="first_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="first_last_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="display_label" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="login_user_name" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="login_user_password" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="password_recovery_answer" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="password_status" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="employee_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="creation_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="qvw_password" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="qvw_domain_user" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
