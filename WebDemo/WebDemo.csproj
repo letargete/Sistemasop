@@ -114,10 +114,10 @@
       <DependentUpon>PuntoVenta.dbml</DependentUpon>
     </Compile>
     <Compile Include="Code\ServiceLayer.cs" />
-    <Compile Include="DataClasses2.designer.cs">
+    <Compile Include="baseq.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataClasses2.dbml</DependentUpon>
+      <DependentUpon>baseq.dbml</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -154,21 +154,21 @@
       <LastGenOutput>PuntoVenta.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DataClasses2.dbml">
+    <None Include="baseq.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DataClasses2.designer.cs</LastGenOutput>
+      <LastGenOutput>baseq.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
-      <CustomToolNamespace>base1</CustomToolNamespace>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DataClasses2.dbml.layout">
-      <DependentUpon>DataClasses2.dbml</DependentUpon>
+      <CustomToolNamespace>baseq</CustomToolNamespace>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Code\PuntoVenta.dbml.layout">
       <DependentUpon>PuntoVenta.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="baseq.dbml.layout">
+      <DependentUpon>baseq.dbml</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

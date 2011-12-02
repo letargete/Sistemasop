@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\kazejin\Desktop\demo1" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="12/01/2011 15:48:55" />
+    <file relUrl="Site.Master" publishTime="11/25/2011 11:24:36" />
+    <file relUrl="Account/Web.config" publishTime="11/25/2011 11:24:36" />
+    <file relUrl="Account/Register.aspx" publishTime="11/25/2011 11:24:36" />
+    <file relUrl="bin/WebDemo.dll" publishTime="11/26/2011 18:26:38" />
+    <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="11/25/2011 11:24:36" />
+    <file relUrl="Account/Login.aspx" publishTime="11/25/2011 11:24:36" />
+    <file relUrl="Styles/Site.css" publishTime="11/25/2011 11:24:36" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="11/25/2011 11:24:36" />
+    <file relUrl="Account/ChangePassword.aspx" publishTime="11/25/2011 11:24:36" />
+    <file relUrl="Global.asax" publishTime="11/25/2011 11:24:36" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="11/25/2011 11:24:36" />
+    <file relUrl="About.aspx" publishTime="11/26/2011 16:13:10" />
+    <file relUrl="Default.aspx" publishTime="11/26/2011 16:05:04" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="11/25/2011 11:24:36" />
+    <file relUrl="bin/WebDemo.pdb" publishTime="11/26/2011 18:26:38" />
+  </publishProfile>
+</publishData>

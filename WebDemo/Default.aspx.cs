@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using base1;
+using baseq;
 
 namespace WebDemo
 {
@@ -13,13 +13,14 @@ namespace WebDemo
         protected void Page_Load(object sender, EventArgs e)
         {
             //instanciar objeto de contexto
-            base1.base1 db = new base1.base1();
+            baseq.@base db = new baseq.@base();
 
-            var lista = from i in db.GetTable<customer>()
-                        where i.customer_type == "PHAR" && i.customer_id < 20620
+            var lista = from i in db.GetTable<Inventario2>()
+                        //where i.customer_type == "PHAR" && i.customer_id < 20620
                         select new {
-                            ID_clientes = i.customer_id,
-                            tipo_cliente=i.customer_type
+                            id = i.Id
+                            ,Descripcion=i.Descripcion
+                            ,Cantidad = i.Cantidad
                         };
 
             
